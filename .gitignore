@@ -1,0 +1,31 @@
+# Environment variables
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.streamlit/
+
+# Data artifacts
+data/processed/
+
+# Model / index artifacts (generated locally)
+models/index/
+models/embeddings/
+models/**/*.npz
+models/**/*.json
+
+# Eval / results artifacts (optional)
+results/eval_runs.csv
+# (keep eval_summary.csv if you want to show it in repo)

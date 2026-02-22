@@ -1,0 +1,3 @@
+mode,n,hit_rate@k,avg_top1_score,p50_retrieval_ms,p95_retrieval_ms,p50_llm_ms,p95_llm_ms,p50_total_ms,p95_total_ms,avg_num_citations
+faiss,5,1.0,0.4493,8.75,14.59,8842.9,11468.31,8850.15,11479.27,3.0
+tfidf,5,0.8,0.167,0.83,0.91,553.83,653.35,554.83,654.2,2.4

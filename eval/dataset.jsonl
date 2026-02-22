@@ -1,0 +1,5 @@
+{"question": "O cemu se radi u dokumentu?", "keywords": ["RAG", "pretraga", "dokumenata", "retrieval"], "doc_hint": "ML_System_Desig"}
+{"question": "Koje metrike se pominju u evaluaciji?", "keywords": ["NDCG", "MAP", "CTR"], "doc_hint": "ML_System_Desig"}
+{"question": "Koji su koraci serving-a u produkciji?", "keywords": ["serving", "produkcij", "latency"], "doc_hint": "ML_System_Desig"}
+{"question": "Sta je FAISS i zasto se koristi?", "keywords": ["FAISS", "embedding", "vektors"], "doc_hint": "ML_System_Desig"}
+{"question": "Kako radi offline evaluacija?", "keywords": ["offline", "evaluacij", "NDCG"], "doc_hint": "ML_System_Desig"}

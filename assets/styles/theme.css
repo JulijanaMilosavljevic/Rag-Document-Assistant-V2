@@ -1,0 +1,279 @@
+/* ================================
+   GLOBAL DARK NEON GLASS UI
+================================ */
+
+/* Uklanjanje default padding-a */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+html, body, [class*="css"] {
+    background-color: #0d0f16 !important;
+    color: #e5e7eb !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* GLOBAL GLASS EFFECT */
+.glass-card {
+    background: rgba(17, 25, 40, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.12);
+}
+
+/* Section Label */
+.section-label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* HEADERS */
+h1, h2, h3, h4 {
+    color: #f3f4f6 !important;
+}
+
+h3 {
+    margin-bottom: 12px !important;
+}
+
+/* ================================
+   BUTTONS (neon gradient)
+================================ */
+.stButton>button {
+    background: linear-gradient(135deg, #00c6ff, #7b2ff7) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    transition: 0.2s ease-in-out !important;
+    box-shadow: 0 0 18px rgba(0, 204, 255, 0.35);
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.5);
+}
+
+/* ================================
+   TEXT INPUT & DROPDOWNS
+================================ */
+.stTextInput>div>div>input,
+.stTextArea textarea,
+.stSelectbox select,
+.stSlider>div>div>div[role="slider"] {
+    background: rgba(17, 25, 40, 0.45) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e5e7eb !important;
+    border-radius: 10px !important;
+}
+
+.stSelectbox>div>div {
+    color: #e5e7eb !important;
+}
+
+/* ================================
+   ANSWER BOX
+================================ */
+.answer-box {
+    background: rgba(23, 27, 40, 0.55);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.15);
+    backdrop-filter: blur(10px);
+    margin-top: 1rem;
+}
+
+.answer-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #38bdf8;
+}
+
+/* ================================
+   SOURCE CARDS
+================================ */
+.source-card {
+    background: rgba(17, 25, 40, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 15px 18px;
+    margin-bottom: 14px;
+    transition: 0.15s;
+}
+
+.source-card:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.12);
+}
+
+.source-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #a5f3fc;
+}
+
+.source-snippet {
+    color: #e2e8f0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* ================================
+   SIDEBAR
+================================ */
+section[data-testid="stSidebar"] {
+    background: rgba(13, 15, 22, 0.8) !important;
+    backdrop-filter: blur(14px);
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+section[data-testid="stSidebar"] img {
+    margin-bottom: 20px;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e5e7eb !important;
+}
+
+/* ================================
+   INFO LISTS (right column)
+================================ */
+ul {
+    padding-left: 20px !important;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* ================================
+   DIVIDERS & LINES
+================================ */
+hr {
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    margin: 15px 0 !important;
+}
+
+/* ================================
+   SLIDER GLOW EFFECT
+================================ */
+.stSlider>div [role="slider"] {
+    background-color: #38bdf8 !important;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
+}
+
+/* ================================
+   SCROLLBAR (custom neon)
+================================ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #38bdf8, #7b2ff7);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.06);
+}
+
+/* =====================================
+   FIX za Streamlit Slider (1.51.0+)
+   Kompletno uklanja crvenu traku
+   čak i tokom grabovanja (st-dx)
+   ===================================== */
+
+/* Osnovni slider track */
+div[data-baseweb="slider"] .st-au {
+    background: linear-gradient(90deg, #00eaff, #7a5cff) !important;
+    height: 6px !important;
+    border-radius: 20px !important;
+}
+
+/* Track dok se vuče — Streamlit dodaje klasu st-dx */
+div[data-baseweb="slider"] .st-dx {
+    background: linear-gradient(90deg, #00eaff, #7a5cff) !important;
+    height: 6px !important;
+    border-radius: 20px !important;
+}
+
+/* Thumb (kuglica) */
+div[data-baseweb="slider"] [role="slider"] {
+    background: #00eaff !important;
+    border-radius: 50% !important;
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 25px rgba(0, 234, 255, 0.85) !important;
+}
+
+/* Thumb dok se vuče */
+div[data-baseweb="slider"] [role="slider"]:active {
+    background: #00cfff !important;
+
+    box-shadow:
+        0 0 18px #00cfff,
+        0 0 45px rgba(0, 200, 255, 1) !important;
+}
+
+/* Ukloni crvene pseudo-elemente */
+div[data-baseweb="slider"] [role="slider"]::before,
+div[data-baseweb="slider"] [role="slider"]::after {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+/* ============================
+   GLOBAL STREAMLIT INPUT FIX
+   Radi u Streamlit 1.51.0
+============================ */
+div[data-testid="stTextInput"] input[type="text"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 255, 255, 0.35) !important;
+    border-radius: 12px !important;
+    padding: 14px 16px !important;
+    color: #e6faff !important;
+    font-size: 16px !important;
+    height: 38px !important;
+
+    /* Glow */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.25) !important;
+
+    backdrop-filter: blur(8px) !important;
+    transition: 0.25s ease !important;
+}
+
+/* Fokus stanje */
+div[data-testid="stTextInput"] input[type="text"]:focus {
+    border: 1px solid rgba(0, 255, 255, 0.8) !important;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.75) !important;
+    outline: none !important;
+}
+
+/* Ukloni CRVENI border */
+div[data-testid="stTextInput"] input[type="text"]:invalid {
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 255, 255, 0.35) !important;
+}
+
+/* Ukloni "Press Enter to apply" */
+div[data-testid="InputInstructions"] {
+    display: none !important;
+}
+
+.st-cw,.st-da {
+    border: none !important;
+}
