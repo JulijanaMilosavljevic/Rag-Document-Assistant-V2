@@ -11,5 +11,5 @@ httpx==0.24.1
 groq==0.7.0
 
 sentence-transformers==3.0.1
-faiss-cpu==1.8.0.post1
+faiss-cpu>=1.12.0
 pandas==2.2.2
