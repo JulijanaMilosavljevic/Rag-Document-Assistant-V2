@@ -41,3 +41,5 @@ Rag‑Document‑Assistant-V2/ <br/>
 ## Why V2?
 
 Version V2 delivers much higher accuracy and scalability thanks to dense vectors and FAISS. Unlike the TF‑IDF approach, vectors from a Sentence Transformers model capture semantic similarity, enabling more precise retrieval of relevant context.
+## Live Demo 
+[RAG Document Assistant-V2](https://rag-document-assistant-v2.onrender.com/)
